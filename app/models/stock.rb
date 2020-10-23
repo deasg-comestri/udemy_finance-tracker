@@ -22,4 +22,9 @@ class Stock < ApplicationRecord
     end
   end
 
+
+  def self.db_lookup(ticker_symbol)
+    where(ticker: ticker_symbol).first
+  end
+
 end

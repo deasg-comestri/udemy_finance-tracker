@@ -1,0 +1,7 @@
+<h1>My Portfolio</h1>
+
+<% if !@friends.empty? %>
+  <%= render 'friend_list' %>
+<% else %>
+  <div><%= fa_icon 'sad-tear' %> No friends</div>  
+<% end %>
